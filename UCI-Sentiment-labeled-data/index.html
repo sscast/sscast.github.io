@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Purpose" />
 <meta property="og:description" content="Purpose" />
-<link rel="canonical" href="http://localhost:4000/UCI-Sentiment-labeled-data/" />
-<meta property="og:url" content="http://localhost:4000/UCI-Sentiment-labeled-data/" />
+<link rel="canonical" href="https://sscast.github.io//UCI-Sentiment-labeled-data/" />
+<meta property="og:url" content="https://sscast.github.io//UCI-Sentiment-labeled-data/" />
 <meta property="og:site_name" content="Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-11-08T21:14:38-05:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Sylvia"},"url":"http://localhost:4000/UCI-Sentiment-labeled-data/","headline":"A binary classifier on sentiment analysis","dateModified":"2019-11-08T21:14:38-05:00","datePublished":"2019-11-08T21:14:38-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/UCI-Sentiment-labeled-data/"},"description":"Purpose","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://sscast.github.io//UCI-Sentiment-labeled-data/"},"url":"https://sscast.github.io//UCI-Sentiment-labeled-data/","headline":"A binary classifier on sentiment analysis","dateModified":"2019-11-08T21:14:38-05:00","datePublished":"2019-11-08T21:14:38-05:00","author":{"@type":"Person","name":"Sylvia"},"description":"Purpose","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Blog" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://sscast.github.io//feed.xml" title="Blog" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Blog</a><nav class="site-nav">
@@ -114,21 +114,21 @@ You may download the data at this <a href="http://archive.ics.uci.edu/ml/dataset
 
 <ul>
   <li>I cleaned up the data by removing punctuations and stopwords and some extended stopwords such as ‘s’, ‘ve’, ‘m’, ‘wasn’, ‘didn’, ‘t’ etc. , those incomplete words resulted from removing of apostrophe and not containing any meaning.</li>
-  <li>I have also removed words like ‘product’, ‘movie’, ‘service’ that are high frequency words for both positive and negative reviews, which are neutral in nature</li>
 </ul>
 
 <h3 id="clustering">Clustering</h3>
 
 <ul>
-  <li>Let’s look at the word cloud plot to have a few of the top frequent words. The words shown in the white box are word cloud from Positive reviews and red box are from the negative reviews:</li>
+  <li>Let’s look at the word cloud plot to have a general idea of the positive and negative words.</li>
 </ul>
 
-<p><img src="../../../../assets/images/positive.png" alt="WordCloud" /></p>
+<p><img src="../../../../assets/images/wordcloud.png" alt="WordCloud" /></p>
 
 <blockquote>
   <p>From a glance of the wordcloud, we can see some intereting findings, which will help our next steps for modeling. For example:</p>
   <ul>
-    <li>“quality”, “sound” tend to be associated with positive reviews, and “phone”, “makes”, “bluetooth” tend to be associated with negative reviews. We can further manipulate the wordCloud based on the meaningfulness of the words, but currently it looks fine to me.</li>
+    <li>“around” tends to be associated with positive reviews, and “refund”, “refuse” tend to be associated with negative reviews.</li>
+    <li>I will remove words like ‘product’, ‘movie’, ‘service’ that are high frequency words for both positive and negative reviews, which are neutral in nature</li>
   </ul>
 </blockquote>
 
@@ -229,7 +229,7 @@ weighted avg       0.81      0.81      0.81       600
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>A collection of some interesting projects</p>
+        <p>A collection of thoughts and projects</p>
       </div>
     </div>
 
