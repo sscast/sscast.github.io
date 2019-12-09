@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Purpose" />
 <meta property="og:description" content="Purpose" />
-<link rel="canonical" href="https://sscast.github.io//UCI-Sentiment-labeled-data/" />
-<meta property="og:url" content="https://sscast.github.io//UCI-Sentiment-labeled-data/" />
+<link rel="canonical" href="http://localhost:4000/UCI-Sentiment-labeled-data/" />
+<meta property="og:url" content="http://localhost:4000/UCI-Sentiment-labeled-data/" />
 <meta property="og:site_name" content="Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-11-08T21:14:38-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://sscast.github.io//UCI-Sentiment-labeled-data/"},"url":"https://sscast.github.io//UCI-Sentiment-labeled-data/","headline":"A binary classifier on sentiment analysis","dateModified":"2019-11-08T21:14:38-05:00","datePublished":"2019-11-08T21:14:38-05:00","author":{"@type":"Person","name":"Sylvia"},"description":"Purpose","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/UCI-Sentiment-labeled-data/"},"url":"http://localhost:4000/UCI-Sentiment-labeled-data/","headline":"A binary classifier on sentiment analysis","dateModified":"2019-11-08T21:14:38-05:00","datePublished":"2019-11-08T21:14:38-05:00","author":{"@type":"Person","name":"Sylvia"},"description":"Purpose","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://sscast.github.io//feed.xml" title="Blog" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Blog" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Blog</a><nav class="site-nav">
@@ -196,7 +196,7 @@ weighted avg       0.81      0.81      0.81       600
 
 <h4 id="models-comparison">models comparison</h4>
 
-<p>ROC curve looks quite similar with the three models and we can also see the accuracy levels are similar too. imdb dataset seems fit better with the MLP model compared with the other two datasets.</p>
+<p>ROC curve looks quite similar with the three models and we can also see the accuracy levels are similar too.</p>
 
 <p><img src="../../../../assets/images/roc_auc_curve.png" alt="roc_auc_curve" /></p>
 
@@ -205,7 +205,9 @@ weighted avg       0.81      0.81      0.81       600
 <h3 id="conclusion-and-next-steps">Conclusion and next steps</h3>
 <p>The simple exercise shows how simple sentiment models work and work as a quick test of a dataset. What can be done further is to do a multiclassification classifier, with positive, negative and neutral reviews, as in real life, people do have neatral opinions.</p>
 
-<p>One thing to note is that the dataset for this model is hand crafted, by removing review score=3, and set review scores=1 and 2 as negative, and 4 and 5 as positive. This way has effectively deliminate some ambiguity, and thus making the model more accurate. However, the dataset I use with 50,000 record have only positive and negative labels too, but didn’t mention that it is prepared and selected based on the same methodology, also achieved pretty good accurarcy. So building a classifier should be very feasible and can be used in many real business use cases. With larger dataset, we can definitely choose a model to achieve better metrics. This is a good exercise to once again show that the problem for deep learning is not to achieve high accuracy, but to generalize.</p>
+<p>One thing to note is that the dataset for this model is hand crafted, by removing review score=3, and set review scores=1 and 2 as negative, and 4 and 5 as positive. This way has effectively deliminate some ambiguity, and thus making the model more accurate. However, the dataset I use with 50,000 record have only positive and negative labels too, but didn’t mention that it is prepared and selected based on the same methodology, also achieved pretty good accurarcy. So building a classifier should be very feasible and easy and can be used in many real business use cases. For a larger dataset, we can definitely choose a model to achieve good metrics.</p>
+
+<p>This is a good exercise to once again show that the problem for deep learning is not to achieve high accuracy, but to generalize.</p>
 
 
   </div><a class="u-url" href="/UCI-Sentiment-labeled-data/" hidden></a>
