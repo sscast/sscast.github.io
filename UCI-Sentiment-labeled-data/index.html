@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Purpose" />
 <meta property="og:description" content="Purpose" />
-<link rel="canonical" href="http://localhost:4000/UCI-Sentiment-labeled-data/" />
-<meta property="og:url" content="http://localhost:4000/UCI-Sentiment-labeled-data/" />
+<link rel="canonical" href="https://sscast.github.io//UCI-Sentiment-labeled-data/" />
+<meta property="og:url" content="https://sscast.github.io//UCI-Sentiment-labeled-data/" />
 <meta property="og:site_name" content="Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-11-08T21:14:38-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/UCI-Sentiment-labeled-data/"},"url":"http://localhost:4000/UCI-Sentiment-labeled-data/","headline":"A binary classifier on sentiment analysis","dateModified":"2019-11-08T21:14:38-05:00","datePublished":"2019-11-08T21:14:38-05:00","author":{"@type":"Person","name":"Sylvia"},"description":"Purpose","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://sscast.github.io//UCI-Sentiment-labeled-data/"},"url":"https://sscast.github.io//UCI-Sentiment-labeled-data/","author":{"@type":"Person","name":"Sylvia"},"headline":"A binary classifier on sentiment analysis","dateModified":"2019-11-08T21:14:38-05:00","description":"Purpose","datePublished":"2019-11-08T21:14:38-05:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Blog" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://sscast.github.io//feed.xml" title="Blog" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Blog</a><nav class="site-nav">
@@ -158,7 +158,7 @@ You may download the data at this <a href="http://archive.ics.uci.edu/ml/dataset
 weighted avg       0.81      0.81      0.81       600
 </pre></td></tr></tbody></table></code></pre></div></div>
 <blockquote>
-  <p>The accuracy (81%) is not too bad, given that this is a small dataset, and I only did very simple data cleanning. Interesting to see that the precision is higher on positive reviews, and recall is higher on negative reviews. Given the size of the dataset, this might be simply based on randomness of the distributio of the train and test data.</p>
+  <p>The accuracy (81%) is not too bad, given that this is a small dataset, and I only did very simple data cleanning. Interesting to see that the precision is higher on positive reviews, and recall is higher on negative reviews. Given the size of the dataset, this might be simply based on randomness of the distribution of the train and test data.</p>
 </blockquote>
 
 <p>I have tested the same model on a much larger dataset, with 50,000 training record, and I can easily achieve 90% accuracy, and higher precision and higher recall.</p>
@@ -208,7 +208,6 @@ weighted avg       0.81      0.81      0.81       600
 <p>One thing to note is that the dataset for this model is hand crafted, by removing review score=3, and set review scores=1 and 2 as negative, and 4 and 5 as positive. This way has effectively deliminate some ambiguity, and thus making the model more accurate. However, the dataset I use with 50,000 record have only positive and negative labels too, but didn’t mention that it is prepared and selected based on the same methodology, also achieved pretty good accurarcy. So building a classifier should be very feasible and easy and can be used in many real business use cases. For a larger dataset, we can definitely choose a model to achieve good metrics.</p>
 
 <p>This is a good exercise to once again show that the problem for deep learning is not to achieve high accuracy, but to generalize.</p>
-
 
   </div><a class="u-url" href="/UCI-Sentiment-labeled-data/" hidden></a>
 </article>
